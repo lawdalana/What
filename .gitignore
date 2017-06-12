@@ -1,3 +1,5 @@
 __pycache__/
 *.csv
 .ipynb_checkpoints/
+README.txt
+Input.txt
