@@ -1,0 +1,2 @@
+id, main group, groupa, username, title, type, is_end, isban, islock, published, pack_draft, pack_selling, updatedt, status, fav, chapter, visitorall, visitor
+id, fav, chapter, visitorall, visitor
