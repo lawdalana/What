@@ -2,3 +2,4 @@ __pycache__/
 *.csv
 .ipynb_checkpoints/
 *.txt
+Auto_Kmean_v1.py
