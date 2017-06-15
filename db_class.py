@@ -35,7 +35,7 @@ class db:
       self.cursor.execute(statement,(title))
        # Commit your changes in the database
       self.Connection.commit()
-    except:
-      print("Error" + statement)
+    except pymysql.MySQLError as e:
+      print("Error: " , e)  
        # Rollback in case there is any error
       self.Connection.rollback() 
