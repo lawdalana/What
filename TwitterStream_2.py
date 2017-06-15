@@ -93,4 +93,6 @@ if __name__ == '__main__':
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_secret)
     stream = tweepy.Stream(auth, l)
-    stream.filter(track=['แอพเด็กดี','เว็บเด็กดี','เว็ปเด็กดี','ในเด็กดี','นิยายเด็กดี','ควิซเด็กดี','Quizเด็กดี'])
+    stream.filter(track=['admissionเด็กดี','คะแนนเด็กดี','เม้นเด็กดี','ทวิตด็กดี','เข้าเด็กดี','Dek-D','Dekd',
+        'dekd','เว็บสีส้ม','เว็ปสีส้ม','คำนวนคะแนนAdmission','คำนวนคะแนน Admission',
+        'Pre-Entrance','PreEntrance','Pre-Ent','pre-ent','พี่ลาเต้','ลาเต้เด็กดี'])
