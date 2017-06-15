@@ -92,7 +92,7 @@ if __name__ == '__main__':
                     action="store", # optional because action defaults to "store"
                     dest="Kn",
                     type="int",
-                    default="11",
+                    default="20",
                     help="[Optional] Set K in kmean")
 
     (options, args) = parser.parse_args()
@@ -123,6 +123,7 @@ if __name__ == '__main__':
                     novel_header.append(row[0:-4])
                     data.append(row[-4:])
                     label.append(0)
+                    print(len(data),data[-1])
         del novel_header[index]
         del data[index]
         del label[index]
@@ -138,6 +139,8 @@ if __name__ == '__main__':
         del novel_header[index]
         del data[index]
         del label[index]
+
+
 
         # Normalize #
         Trans = np.asarray(data).T.tolist()
