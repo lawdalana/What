@@ -79,7 +79,8 @@ class StdOutListener(tweepy.StreamListener):
                     "hashtags": "Null"
                 }
                 )
-            print(json.dumps(buf),"\n")
+            with codecs.open("Result.txt","a","utf-8") as test:
+                test.write(json.dumps(buf))
             del buf
         return True
 
